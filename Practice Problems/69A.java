@@ -1,8 +1,4 @@
 //https://codeforces.com/problemset/problem/69/A
-/*
-* (c) Akshat Srivastava
-*/
-
 import java.io.*;
 import java.util.*;
 public class YoungPhysicist {
