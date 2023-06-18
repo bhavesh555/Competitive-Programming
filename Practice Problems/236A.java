@@ -1,7 +1,4 @@
 //https://codeforces.com/problemset/problem/263/A
-/*
-*(c) Akshat Srivastava
-*/
 
 import java.io.*;
 import java.util.*;
