@@ -1,8 +1,4 @@
 //https://codeforces.com/contest/1426/problem/D
-/*
-* (c) Saurav Prateek
-*/
-
 import java.util.*;
 import java.io.*;
 public class NonZeroSegments {
