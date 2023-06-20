@@ -1,0 +1,42 @@
+//https://leetcode.com/contest/weekly-contest-202/problems/magnetic-force-between-two-balls/
+
+class Solution {
+    private static boolean check(int x, int k, int []stalls){
+
+        int Placed = 1, lastPos = stalls[0];
+        int n = stalls.length;
+
+        for (int i = 1; i < n; i++){
+            if ((stalls[i] - lastPos) >= x){
+                Placed = Placed + 1;
+
+                if (Placed == k){
+                    return true;
+                }
+                lastPos = stalls[i];
+            }
+        }
+        return false;
+}
+    public int maxDistance(int[] stalls, int k) {
+        Arrays.sort(stalls);
+        int low = 0, high = 1000000000, mid, pos = 0;
+
+        while (high >= low)
+        {
+            mid = (high + low) / 2;
+
+            if (check(mid, k, stalls))
+            {
+                low = mid + 1;
+                pos = mid;
+            }
+            else
+            {
+                high = mid - 1;
+            }
+        }
+
+        return pos;
+    }
+}
