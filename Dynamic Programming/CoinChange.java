@@ -1,6 +1,3 @@
-// https://practice.geeksforgeeks.org/problems/coin-change2448/1#
-// Unbounded Knapsack Variation
-
 class Solution
 {
     public long count(int a[], int n, int w) 
